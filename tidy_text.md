@@ -138,9 +138,6 @@ that related variables are contiguous. Rows can then be ordered by the first
 variable, breaking ties with the second and subsequent (fixed) variables." [Tidy
 data]
 
-
-[Other criteria?]
-
 ## Why make your data "tidy"?
 
 This may all seem like a lot of extra work, to make a dataset "tidy", and why 
@@ -174,7 +171,6 @@ most command line tools play well together. ...  Each function should solve one
 small and well-defined class of problems. To solve more complex problems, you
 combine simple pieces in a standard way." [Declutter]
 
-
 The tidyverse isn't the only popular system that follows this philosophy---one
 other favorite is Legos. Legos are small, plastic bricks, with small studs on
 top and tubes for the studs to fit into on the bottom. The studs all have the
@@ -188,7 +184,7 @@ at the top of the brick).
 This is true if you want to build with bricks of different colors or different
 heights or different widths or depths. It even allows you to include bricks at
 certain spots that either don't require input (for example, a solid sheet that
-will serve as the base) or that don't give output (for example, the round smooth
+serves as the base) or that don't give output (for example, the round smooth
 bricks with painted "eyes" that are used to create different creatures). With
 Legos, even though each "tool" (brick) is very simple, the tools can be combined
 in infinite variations to create very complex structures. 
@@ -197,15 +193,16 @@ The tools in the "tidyverse" operate on a similar principle. They all input one
 of a few very straightforward data types, and they (almost) all output data in
 the same format they input it. For most of the tools, their required format for
 input and output is the "tidy data" format [Tidy data], called a tidy
-*dataframe* in R.
+*dataframe* in R---this is a dataframe that follows the rules detailed earlier
+in this section.
 
 Some of the tools require input and output of *vectors* instead of tidy
-dataframes [Tidy data]; a *vector* is a one-dimensional string of values, all of
-which are of the same data type (e.g., all numbers, or all character strings,
-like names).  In a tidy dataframe, each column is a vector, and the dataframe is
-essentially several vectors of the same length stuck together to make a table.
-Having functions that input and output vectors, then, means that you can use
-those functions to make changes to the columns in a tidy dataframe. 
+dataframes [Tidy data]; a *vector* in R is a one-dimensional string of values,
+all of which are of the same data type (e.g., all numbers, or all character
+strings, like names).  In a tidy dataframe, each column is a vector, and the
+dataframe is essentially several vectors of the same length stuck together to
+make a table.  Having functions that input and output vectors, then, means that
+you can use those functions to make changes to the columns in a tidy dataframe. 
 
 A few functions in the "tidyverse" input a tidy dataframe but output data in a
 different format.  For example, visualizations are created using a function
@@ -221,13 +218,14 @@ This common input / output interface, and the use of small tools that follow
 this interface and can be combined in various ways, is what makes the tidyverse
 tools so powerful. However, there are other good things about the tidyverse that
 make it so popular. One is that it's fairly easy to learn to use the tools, in
-comparison to learning how to write code for other R tools. The developers who
-have created the tidyverse tools have taken a lot of effort to try to make sure
-that they have a consistent *user interface*. So far, we've talked about the
-interface between functions, and how a common *input / output interface* means
- the functions can be chained together more easily. But there's another
-interface that's important for software tools: the rules for how a computer 
-users employ that tool, or the *user interface*.
+comparison to learning how to write code for other R tools [Teach the tidyverse;
+Teaching R to new users]. The developers who have created the tidyverse tools
+have taken a lot of effort to try to make sure that they have a clear and
+consistent *user interface* across tools [Tidy tools manifesto; Three ring
+circus]. So far, we've talked about the interface between functions, and how a
+common *input / output interface* means the functions can be chained together
+more easily. But there's another interface that's important for software tools:
+the rules for how a computer users employ that tool, or the *user interface*.
 
 To help understand a user interface, and how having a consistent user interface
 across tools is useful, let's think about a different example---cars. When you
@@ -246,20 +244,24 @@ include for the function, what to name those parameters, and how to provide
 feedback to the user through messages, warnings, and the final output.  
 
 If a collection of tools is similar in its user interfaces, it will make it
-easier for users to learn and use any of the tools in that collection once 
+easier for users to learn and use any of the tools in that collection once
 they've learned how to use one. For cars, this explains how the rental car
 business is able to succeed. Even though different car models are very different
-in many characteristics---their engines, their colors, their software---they 
-are very consistent in their user interfaces. Once you've learned how to 
-drive one car, when you get in a new car, the gas pedal, brake, and steering
-wheel are almost guaranteed to be in about the same place and to operate
-about the same way as in the car you learned to drive in. The exceptions are
-rare enough to be memorable---think of all the movies where a laughline comes
-from a character trying to drive a car with the driver side on the right
-if they're used to the left or vice versa. 
+in many characteristics---their engines, their colors, their software---they are
+very consistent in their user interfaces. Once you've learned how to drive one
+car, when you get in a new car, the gas pedal, brake, and steering wheel are
+almost guaranteed to be in about the same place and to operate about the same
+way as in the car you learned to drive in. The exceptions are rare enough to be
+memorable---think how manyu movies have a laughline from a character trying to
+drive a car with the driver side on the right if they're used to the left or
+vice versa. 
 
-The tidyverse tools are similarly designed so that they all have a very 
-similar user interface. For example ...
+The tidyverse tools are similarly designed so that they all have a very similar
+user interface. For example ...  
+What's more, the functions are typically given
+names that very clearly describe the action that the function does, like
+`filter`, `summarize`, `mutate`, and `group`. As a result, the final code is 
+very clear and can almost be "read" as a natural language, rather than code.
 
 > "Another part of what makes the Tidyverse effective is harder to see and, 
 indeed, the goal is for it to become invisible: conventions. The Tidyverse
@@ -274,15 +276,30 @@ able to guess how another different component works." [Three ring circus]
 that tidyverse packages work together naturally, and once you’ve mastered one,
 you have a head start on mastering the others." [Tidy tools manifesto]
 
-As a result, the tidyverse collection of tools is pretty easy to learn, 
-compared to other sets of functions in scripting languages, and pretty 
-easy to expand your knowledge of once you know some of its functions. 
-Several people who teach R programming now focus on first teaching
-the tidyverse, given these characteristics, and it's often a first 
-focus for online courses and workshops on R programming. Since it's 
-main data structure is the "tidy data" structure, it's often well worth
-recording data in this format so that all these tools can easily be 
-used to explore and model the data.   
+As a result, the tidyverse collection of tools is pretty easy to learn, compared
+to other sets of functions in scripting languages, and pretty easy to expand
+your knowledge of once you know some of its functions.  Several people who teach
+R programming now focus on first teaching the tidyverse, given these
+characteristics [Teach the tidyverse; Teaching R to New Users], and it's often a
+first focus for online courses and workshops on R programming. Since it's main
+data structure is the "tidy data" structure, it's often well worth recording
+data in this format so that all these tools can easily be used to explore and
+model the data.   
+
+> "All our code is underpinned by the principles of tidy data, the 
+grammar of data manipulation, and the tidyverse R packages developed 
+by Wickham. This deliberate philosophy for thinking 
+about data helped bridge our scientific questions with the data processing 
+required to get there, and the readability and conciseness of 
+tidyverse operations makes our data analysis read more as a story 
+arc. Operations require less syntax---which can mean fewer potential 
+errors that are easier to identify---and they can be chained together, 
+minimizing intermediate steps and data objects that can cause clutter and 
+confusion. The tidyverse tools for wrangling data have 
+expedited our transformation as coders and made R less intimidating to 
+learn." [Our path to better science]
+
+## Using tidyverse tools with data in the "tidy data" format
 
 The tidyverse includes tools for many of the tasks you might need to
 do while managing and working with experimental data. When you download
@@ -295,45 +312,38 @@ that add on new functions for R. They can be created and contributed
 by anyone, and many are collected through a few key repositories like
 CRAN and Bioconductor. 
 
-All the tidyverse tools are included in these R packages, so once you 
-download R, you'll need to download these packages as well to use the
-tidyverse tools. [The 'tidyverse' package?] 
+All the tidyverse tools are included in R extension packages, rather than base
+R, so once you download R, you'll need to download these packages as well to use
+the tidyverse tools. The core tidyverse functions include functions to read in
+data (the `readr` package for reading in plain text, delimited files, `readxl`
+[?] to read in data from Excel spreadsheets), clean or summarize the data (the
+`dplyr` package, which includes functions to merge different datasets [?], make
+new columns as functions of old ones, and summarize columns in the data, either
+as a whole or by group), and reformat the data if needed to get it in a tidy
+format (the `tidyr` package). The tidyverse also includes more precise tools,
+including tools to parse dates and times (`lubridate`) and tools to work with
+character strings, including using regular expressions as a powerful way to find
+and use certain patterns in strings (`stringr`).  Finally, the tidyverse
+includes powerful functions for visualizing data, based around the `ggplot2`
+package, which implements a "grammar of graphics" within R. You can install and
+load any of these tidyverse packages one-by-one using the `install.packages` and
+`library` functions with the package name from within R. If you are planning on
+using many of the tidyverse packages, you can also install and load many of the
+tidyverse functions by installing a package called "tidyverse", which serves as
+an umbrella for many of the tidyverse packages. 
 
-> "There are many other excellent packages that are not part of the tidyverse,
-because they are designed with a different set of underlying principles. This
-doesn’t make them better or worse, just different. In other words, the
-complement to the tidyverse is not the messyverse, but many other universes of
-interrelated packages." [Tidy tools manifesto]
-
-The core tidyverse functions include functions to read in data
-(the `readr` package for reading in plain text, delimited files, 
-`readxl` [?] to read in data from Excel spreadsheets), clean or 
-summarize the data (the `dplyr` package, which includes functions
-to merge different datasets [?], make new columns as functions of 
-old ones, and summarize columns in the data, either as a whole or 
-by group), and reformat the data if needed to get it in a tidy format
-(the `tidyr` package). The tidyverse also includes more precise tools, 
-including tools to parse dates and times (`lubridate`) and tools to 
-work with character strings, including using regular expressions as 
-a powerful way to find and use certain patterns in strings (`stringr`).
-Finally, the tidyverse includes powerful functions for visualizing
-data, based around the `ggplot2` package, which implements a "grammar
-of graphics" within R. 
-
-In addition to the original tools in the tidyverse, many people have
-developed *tidyverse* extensions---R packages that build off the tools
-and principles in the tidyverse. These often bring the tidyverse
-conventions into tools for specific areas of science. For example, the
-`tidytext` package provides tools to analyze large datasets of text, 
-including books or collections of tweets, using the tidy data format
-and tidyverse-style tools. Similar tidyverse extensions exist for
-working with network data ([package?]) or geospatial data (`sf`).
-
+In addition to the original tools in the tidyverse, many people have developed
+*tidyverse* extensions---R packages that build off the tools and principles in
+the tidyverse. These often bring the tidyverse conventions into tools for
+specific areas of science. For example, the `tidytext` package provides tools to
+analyze large datasets of text, including books or collections of tweets, using
+the tidy data format and tidyverse-style tools. Similar tidyverse extensions
+exist for working with network data ([package?]) or geospatial data (`sf`).
 Extensions also exist for the visualization branch of the tidyverse
-specifically. These include *ggplot extensions* that allow users to 
-create things like calendar plots and ... [mouse plots?]
+specifically. These include *ggplot extensions* that allow users to create
+things like calendar plots and ... [mouse plots?] These extensions all allow
+users to work with data that's in a "tidy data" format, and they all provide
+similar user interfaces, making it easier to learn a large set of tools to do a
+range of data analysis and visualization, compared to if the set of tools lacked
+this coherence.
 
-These extensions all allow users to work with data that's in a "tidy data"
-format, and they all provide similar user interfaces, making it easier to learn
-a large set of tools to do a range of data analysis and visualization, compared
-to if the set of tools lacked this coherence.
