@@ -1,4 +1,19 @@
 
+## Macrophages
+
+> "When any harmful microbe invades the human body, bone marrow 
+produces billions of a certain kind of white blood cell. These are
+called macrophages. They are carried by the bloodstream to the site
+of the invasion, where they surround and kill the germs. During this
+struggle both good cells and the bad bacteria die, resulting in death
+matter called pus." [Invincible Microbe, p. 105]
+
+> "But with *M. tuberculosis* the battle sometimes had a different 
+ending. Generally, the macrophages respond to the invasion and engulf 
+the TB bacillus, usually killing it. But sometimes the TB bacteria will
+break into the macrophages and begin multiplying inside them." [Invincible 
+Microbe, p. 105]
+
 ## T cells
 
 > "When T cells initially detect an infected or cancerous cell, they 
@@ -267,3 +282,27 @@ revealed that regulatory T cells safeguard against unwanted immune
 responses in more that one way. They secrete cytokines that dampen
 immune responses locally, and they can switch off the activity of another
 immune cell with a touch." [The Beautiful Cure, p. 161]
+
+## BCG
+
+> "One of the most obsessive and long-term searches for an answer to TB
+was begun in 1906 by two French scientists, Albert Calmette and Camille
+Guerin. They took a highly virulent strain of *M. bovis* and began working
+to create a weakened form of it. Using the inoculation principle 
+developed by Koch, they hoped that introducing the weakened bacillus in a
+human would provoke the body to protect itself against invading TB germs.
+Year after year Calmette and Guerin struggled to perfect their serum. ...
+Finally, after 15 years of work, they tested their formula---called
+Bacilli Calmette-Guerin, or BCG---on a human in 1921. ... This test 
+[on one boy] was followed by other tests on humans. The results were 
+decidedly mixed; while many people remained healthy even when surrounded
+by people with the disease, a goodly number fell victim to TB. Still, 
+in a world hungering for a way to stop tuberculosis, the procedure was
+deemed a success. By the late 1920s, hundreds of thousands of people in
+Europe had been given BCG. Unfortunately, doctors and researchers 
+couldn't say with certainty how effective it was in protecting against
+TB, and still can't today. Numerous clinical studies over the years have
+been inconclusive; some suggest that the formula does very little to 
+ward off TB. While the vaccine is still in use outside the United States, 
+many experts ... consider it a 'widely used but poorly effective 
+vaccine'." [Invincible Microbe, pp. 87--90]
