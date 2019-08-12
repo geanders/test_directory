@@ -140,6 +140,13 @@ When the code is shorter and tighter, it's easier to see precisely what
 it's supposed to be doing and not doing. It's a forest of spare birch 
 trees; you can see right through it." [Coders, p. 136]
 
+> "[The ENIAC Girls] invented groundbreaking ideas in coding. Synder 
+realized that if you wanted to debug a program that wasn't running
+correctly, it's help to have a 'break point', a moment when you could
+stop a program midway through its run. When she pitched the idea to male
+engineers running ENIAC, they agreed to implement it; and to this day, coders
+use break points as a key part of debugging." [Coders, pp. 190--191]
+
 ## Functions
 
 > "S is a *functional* language. S expressions contain function calls. ...
@@ -682,6 +689,14 @@ a catastrophe, they'd frantically try to fix it, often toiling until
 the early morning, or sometimes just 'reverting' it back to the old
 code when they simply couldn't get the new feature working." 
 [Coders, p. 3]
+
+> "[Enhancing careers is] also why so many release their weekend
+just-for-fun side-projects as open source code on sites like
+GitHub. There's the pleasure of letting others see your work, the
+joy of discovering that some weird tool you crafted for yourself
+is also useful for others; plus, you can learn a lot from looking
+at other people's open code and seeing how they built things."
+[Coders, p. 163]
 
 ## Other languages
 
