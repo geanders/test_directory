@@ -147,6 +147,119 @@ stop a program midway through its run. When she pitched the idea to male
 engineers running ENIAC, they agreed to implement it; and to this day, coders
 use break points as a key part of debugging." [Coders, pp. 190--191]
 
+> "Computers are much pickier and less flexible about spelling than
+humans; thus hackers need to be very precise when talking about characters, 
+and have developed a considerable amount of verbal shorthand for them.
+Every character [in ASCII] has one or more names---some formal, some concise,
+some silly. Common jargon names for ASCII characters are collected here. ...
+!: Common: bang; pling; excl; shriek; exclamation mark [official ASCII 
+name]; ... #: Common: number sign; pound; pound sign; hash; sharp; crunch; 
+hex. ... [asterisk]: Common: star; splat; asterisk [official ASCII name]; 
+/: Common: slash; stroke; slant [official ASCII name]; forward slash; 
+\: Common: backslash; escape (from C/Unix); reverse slash; slosh; 
+backslant; backwhack. [underline]: Common: underline [official ASCII name]; 
+underscore; underbar; under; |: Common: bar; or; or-bar; v-bar; pipe; 
+vertical bar; ~: Common: tilde [official ASCII name]; squiggle; tiddle; not."
+[New Hackers Dictionary, pp. 44--46] 
+
+> "**metasyntactic variable** *n.* A name used in example and understood
+to stand for whatever thing is under discussion, or any random number
+of things under discussion. The word foo is the canonical example.
+To avoid confusion, hackers never (well, hardly ever) use 'foo' or other
+words like it as permanent names for anything. In filenames, a common 
+convention is that any filename beginning with a metasyntactic-variable
+name is a scratch file that may be deleted at any time. To some extent, the
+list of one's preferred metasyntactic variables is a cultural signature. 
+They occur both in series (used for related groups of variables or objects)
+and as singletons. Here are a few common signatures: foo, bar, baz, quux, 
+quuux, quuuux, ...: MIT/Stanford usage, now found everywhere ... ; bazola, 
+ztesch: Stanford (from the mid-70s on); ... snork: Brown University, early
+1970s; ... blarg, wibble: New Zealand; toto, titi, tata, tutu: France; 
+pippo, pluto, paperino: Italy. Pippo and Paperino are the Italian names for
+Goofy and Donald Duck; app, noot, mies: The Netherlands. These are the first
+words a child used to learn to spell on a Dutch spelling board."
+[New Hacker's Dictionary, pp.301--302] 
+
+> "**batch** *adj.* 1. Non-interactive. ... A *batch file* is a series of 
+instructions written to be handed to an interactive program running in 
+batch model. 2. Performance of dreary tasks all at one sitting. 'I finally
+sat down in batch mode and wrote out checks for all those bills...'"
+[New Hacker's Dictionary, p. 58] 
+
+> "**cd tilde** *vi.* To go home. From the Unix C-shell and Korn-shell
+command 'cd ~', which takes one to one's $HOME (cd with no argument
+happens to do the same thing)." [New Hackers Dictionary, p. 106]
+
+> "**comment out** *vt.* To surround a section of code with comment 
+delimiters or to prefix every line in the section with a comment marker;
+this prevents it from being compiled or interpreted. Often done when the
+code is redundant or obsolete, but is left in the source to make the 
+intent of the active code cleaner; also when the code in that section is
+broken and you want to bypass it in order to debug some other part of the 
+code." [New Hackers Dictionary, p. 118]
+
+> "**deprecated** *adj.* Said of a program or feature that is considered
+obsolescent and in the process of being phased out, usually in favor 
+of a specified replacement." [New Hackers Dictionary, p. 150]
+
+> "**dot file** *n.* A file that is not visible by default to 
+normal directory-browsing tools (on Unix, files named with a leading dot
+are, by convention, not normally presented in directory listings. Many 
+programs define one or more dot files in which startup or configuration
+information may be optionally recorded; a user can customize the 
+program's behavior by creating the appropriate file in the current or
+home directory." [New Hackers Dictionary, p. 158] 
+
+> "**recursive acronym** *n.* A hackish (and especially MIT) tradition
+is to choose acronyms / abbreviations that refer humorously to 
+themselves or to other acronyms / abbreviations. The classic examples
+were two MIT editors called EINE ('EINE is not EMACS') and ZWEI
+('ZWEI Was EINE Initially'). ... GNU stands for 'GNU's Not Unix'."
+[New Hackers Dictionary, pp. 381--382]
+
+> "**Hook** *n.* A software or hardware feature included in order to
+simplify later additions or changes by a user." [New Hackers
+Dictionary, p. 248] 
+
+> "**path** *n.* ... 2. [Unix] A file name, fully specified relative 
+to the root directory (as opposed to relative to the current 
+directory; the later is sometimes called a *relative path*). This is
+also called a *pathname*." [New Hackers Dictionary, p. 350]
+
+> "**program** *n.* 1. A magic spell cast over a computer allowing
+it to turn one's input into error messages. 2. An exercise in 
+experimental epistemology. 3. A form of art, ostensibly 
+intended for the instruction of computers, which is nevertheless
+almost inevitably a failure if other programmers can't understand
+it." [New Hackers Dictionary, p. 365]
+
+> "The 80-column width of most character terminals is a legacy of the
+IBM punched card." [New Hackers Dictionary, p. 368]
+
+> "**shell** *n.* 1. [techspeak] The command interpreter used to pass
+commands to an operating system; so called because it is the part
+of the operating system that interfaces with the outside world. ...
+Historical note: Apparently, the original Multics shell (sense 1) was
+so-called because it was a shell (sense 3 [a skeleton program, created
+by hand or by another program]; it ran user programs not by starting up
+separate processes, but by dynamically linking the programs into its 
+own code, calling them subroutines, and then dynamically de-linking 
+them on return." [New Hackers Dictionary, pp. 404--405]
+
+> "**spaghetti code** *n.* Code with a complex and tangled structure, 
+especially one using many GOTOs, exceptions, or other 'unstructured'
+branching constructs." [New Hackers Dictionary, p. 420]
+
+> "**text** *n.* ... 2. Textual material in the mainstream sense; data
+in ordinary ASCII or EBCDIC representation (see 'flat-ASCII'). 'Those
+are text files, you can review them using the editor.'" [New Hackers
+Dictionary, pp. 442--443]
+
+> "**tool** *n.* ... 2. [Unix] An application program with a simple, 
+'transparent' (typically text-stream) interface designed specifically
+to be used in programmed combination with other tools (see filter, 
+plumbing)." [New Hackers Dictionary, p. 449] 
+
 ## Functions
 
 > "S is a *functional* language. S expressions contain function calls. ...
@@ -367,6 +480,22 @@ to figure out which part (or parts) of the program was the problem. So you
 go piece by piece, testing as you go. You get a little 'win' every time a 
 function passes its test." [Coders, p. 84] 
 
+> "Named arguments [in a function] look like assignments, and in a sense
+they are, but of a special kind. The name in the assignment must match
+one of the formal arguments of the function definition, and the assignment
+does not take place until the corresponding argument is evaluated."
+[Programming with Data, p. 179]
+
+> "Computations sometimes need to examine or put together arbitrarily 
+many objects: to form a list; to write out all the objects, to set 
+any number of options or parameters. S provides a special argument name, 
+'...', for this purpose. When this name appears as a formal argument in 
+a function definition, any number of actual arguments in a corresponding
+call will be matched to '...' in the evaulation frame. Then, if '...' 
+appears as an argument in a function call in the body, the matching
+arguments will be passed down, exactly as they appear, including any 
+names." [Programming with Data, p. 183]
+
 ## Objects
 
 > "When the S evaluator encounters the name of an object, it takes that
@@ -482,6 +611,68 @@ ordinary vectors some notion of the values being organized in
 space or time. Matrices, general multiway arrays, and time series
 are the most commonly used structures." [Programming with Data, p. 143]
 
+> "Vectors are S objects containing *n* 'elements' that can be indexed 
+numerically." [Programming with Data, p. 196]
+
+> "The virtual class `vector` glues all the specific vector classes 
+together. A vector class id *defined* to be one that extends `vector`."
+[Programming with Data, p. 196]
+
+> [The vector classes alread defined in S] include most of the lowest-level
+building blocks for organizing data. The most basic of S vectors contain
+numbers, logical values, character strings, raw bytes, or other S 
+objects as their elements. All but the last of these are what we 
+call *atomic* vectors in S. Atomic vectors are defined by the fact 
+that a single element from such a vector is a vector of the same 
+class as the whole vector. Vectors that contain other S objects as
+elements, rather than atomic data, are called *recursive*, in the
+sense that the elements of the vector can be any S class."
+[Programming with Data, p. 197]
+
+> "Of the atomic vectors, those containing numbers dominate the population 
+of S objects in the world, and the class 'numeric' dominates those. 
+Technically, it corresponds to double-precision floating-point data. 
+For S users, that technicality usually doesn't matter; only when you 
+need to understand issues of accuracy or when you communicate with 
+subroutines in, say, C or Fortran does it affect your programming.
+There are other classes of numbers as well: 'integer' for integers, 
+'single' for single-precision floating-point, and 'complex' for 
+numbers in the complex plane." [Programming with Data, p. 197]
+
+> "Logical values in S are TRUE and FALSE, as you would expect. The 
+internal data type of these is the same as for class 'integer', for 
+historical reasons and for consistent mapping to C and Fortran. Again,
+you don't care in most cases." [Programming with Data, p. 197]
+
+> "Character strings in S are represented as ordinary characters 
+bounded by single or double quote characters. The class 'string' 
+represents a vector of such character strings, plus some optional 
+additional information to deal with uses of strings in matching or
+to provide computations using the 'levels', the unique character
+strings meaningful for this object. Class 'string' differs from others
+in this section in that it is built up from basic classes in terms
+of slots, rather than being directly defined by its correspondence to
+a data type in C." [Programming with Data, p. 197]
+
+> "Lists are the fundamental recursive class: a simple vector whose
+elements are arbitrary objects." [Programming with Data, p. 198]
+
+> "Most vector classes supplied with S support the notion of missing
+data or 'NA'. The best way to think of this is as a state that can 
+be tested for each element of the vector, by calling the function
+`is.na`. [This] returns an object like `x` [the input to `is.na` in 
+the example], with TRUE wherever the corresponding element of `x` is
+missing." [Programming with Data, p. 199]
+
+> "S differs fundamentally from languages like C or Java, where 
+individual values, pointers, or references are the basic ingredients
+in representing data. In S, whole objects are the elementary ingredients,
+and the natural approach to representing more complex data reflects 
+this." [Programming with Data, p. 208]
+
+> "The ability of S objects to contain other S objects allows us to 
+represent data or arbitrary complexity." [Programming with Data, p. 208]
+
 ## Connections
 
 > "Most interesting programming will deal with data that originated in some
@@ -508,6 +699,36 @@ As a final step, we explicitly closed the connection. This isn't required but
 it is good housekeeping, freeing up operating system resources and preventing
 any accidental use of the connection later on." [Programming with Data, 
 pp. 18--19]
+
+> "Connection objects unify the *connections* between S and the rest of the
+computing environment, so far as input and output is concerned. A connection
+object represents something to which streams of bytes will be written or 
+from which streams of bytes will be read." [R Programming for Research, p. 373]
+
+> "The most common example of connections is a file in the file system, 
+given as a character string [in the `readLines` function]. The character string
+is interpreted as a reference to a file, the S evaluation manager opens this
+as an S file connection, and `readLines` reads from this connection."
+[Programming with Data, pp. 373--374]
+
+> "Files are a particular class of connection; in the terminology of S classes, 
+the class 'file' extends the virtual class 'connection'. Other connection
+classes connect S to special kinds of files, to other processes via pipes, or to
+S character vectors directly. Objects of other connection classes are 
+supplied as arguments to functions operating on connections the same way
+files are, but are created using a function that specifies the class of 
+connection object." [Programming with Data, p. 374] 
+
+> "Files and fifos correspond to paths; that is, to a character string made
+up of directories, subdirectories, and a final file name. The names are 
+separated by the character '/': if the first character is not a '/' the 
+path is assumed to start in the local directory, where the S session was
+invoked. These are similar to the rules that the command shell and other
+interfaces to the operating system apply. The path must be a legal file
+path in the same sense as it would for use by the shell. By default, S will
+create the file if it does not exist. If the file does exist, S will not
+truncate the file but will begin reading at the start of the file and 
+writing at the end." [Programming with Data, p. 378]
 
 ## Parser
 
@@ -636,6 +857,18 @@ enclosing them in braces, and separating them by newlines or
 semicolons. ... With the braces, the whole thing is treated as 
 a single expression." [Programming with Data, p. 130]   
 
+> "The function 'library' is a specialized version of 'attach' 
+designed for attaching S system libraries, but not restricted 
+to that use. ... The S function 'library' works very much like
+'attach', but is designed particularly to attach libraries defined
+in your version of S. This mainly amounts to 'library' recognizing 
+some short forms for such libraries; for example, 'library(java)' is
+a short form for the subdirectory 'java' under the S library directory.
+... The 'library' function also differs from 'attach' in that it
+attaches databases read-only and has slightly different rules for 
+the position in which the attached database appears." 
+[Programming with Data, pp. 223--225]
+
 ## Regular expressions
 
 > "*Regular expression matching* interprets the strings in [a table] in 
@@ -658,6 +891,35 @@ system interfaces. (S uses this standard definition of regular
 expressions.) Provided you keep to simple use of them, regular 
 expressions can be a substantial help in manipulating strings." 
 [Programming with Data, p. 153]
+
+> "**glob** *v.,n.* To expand special characters in a wildcarded
+name, or the act of doing so (the action is also called 
+*globbing*). The Unix conventions for filename wildcarding have
+become sufficiently pervasive that many hackers use some of them
+in written English, especially in email or news on technical 
+topics. Those commonly encountered include the following: 
+[asterisk]: wildcard for any string ...; ?: wildcard for any 
+single character ...; []: delimites a wildcard matching any of the 
+enclosed characters; {}: alternation of comma-separated values; thus,
+'foo{baz,qux]' would be read as 'foobaz' or 'fooqux'. ...
+Note that glob patterns are similar, but not identical, to those used
+in regexps." [Hackers New Dictionary, p. 218]
+
+> "**grep** *vi.* [from the qed/ed editor idiom g/re/p, where 're'
+stands for a regular expression, to Globally search for the 
+Regular Expression and Print the lines containing matches to it, 
+via Unix grep(1)] To rapidly scan a file or set of files looking 
+for a particular string or pattern ... By extension, to look for 
+something by pattern." [New Hackers Dictionary, p. 226]
+
+> "**regexp** *n.* [Unix] 1. Common written and spoken abbreviation
+for 'regular expression', one of the wildcard patterns used, e.g., 
+by Unix utilities such as grep(1), sed(1), and awk(1). These use 
+conventions similar to but more elaborate than those described 
+under 'glob'. For purposes of this lexicon, it is sufficient to 
+note that regexps also allow complemented character strings using
+'^'; thus, one can specify 'any non-alphabetic character' with 
+[^A-Za-z]." [New Hackers Dictionary, p. 382]
 
 ## Graphics
 
@@ -698,6 +960,21 @@ is also useful for others; plus, you can learn a lot from looking
 at other people's open code and seeing how they built things."
 [Coders, p. 163]
 
+> "**handle** *n.* 1. [from CB slang] An electronic pseudonym; a
+'nom de guerre' intended to conceal the user's true identity."
+[New Hackers Dictionary, p. 239]
+
+> "**README file** *n.* Hacker's eye-introduction traditionally 
+included in the top-level directory of a Unix source distribution, 
+containing a pointer to more detailed documentation, credits, 
+miscellaneous revision history, notes, etc. (The file may be named
+README, or READ.ME, or rarely ReadMe or readme.txt or some other 
+variant.) ... When asked, hackers invariably relate the README
+convention to the famous scene in Lewis Carroll's *Alice's 
+Adventures in Wonderland* in which Alice confronts magic 
+munchies labeled 'Eat Me' and 'Drink Me'." [New Hackers 
+Dictionary, pp. 378--379]
+
 ## Other languages
 
 > "I'll posit that BASIC is, historically, the most consequential 
@@ -713,3 +990,93 @@ But BASIC was one of the easiest yet. Invented in 1964 at Dartmouth
 College, it stood for a Beginner's All-purpose Symbolic Instruction 
 Code, and used fairly simple commands that a newbie could readily 
 grasp and wield." [Coders, p. 40]
+
+## Testing / Bugs 
+> "The general approach suggested in this section is to organize the
+tests as S expressions, specifically called *assertions*. We define
+an assertion to be an S expression that is expected to evaluate to
+TRUE. As your software evolves, you can build up a collection of 
+assertions; testing them after making changes to your [R project]
+will help catch problems and provide some confidence in the software."
+[Programming with Data, p. 197]
+
+> "Admiral Grace Hopper (an early computing pioneer better known for 
+inventing COBOL) liked to tell a story in whcih a technician solved
+a glitch in the Harvard Mark II machine by pulling an actual insect
+out from between the contacts of one of its relays, and she 
+subsequently promulgated 'bug' in its hackish sense as a joke
+about the incident (though, as she was careful to admit, she was not
+there when it happened). For many years the logbook associated
+with the incident and the actual bug in question (a moth) sat in a 
+display case at the Naval Surface Warfare Center." [New Hackers 
+Dictionary, p. 94]
+
+## R Projects
+
+In S, you already had "chapters", which seem like they were a similar 
+idea. [Programming with Data]
+
+## TeX
+
+> "**TeX** *n.* ... An extremely powerful macro-based text formatter 
+written by Donald E. Knuth, very popular in the computer-science
+community ... . TeX fans insist on the correct (and gutteral) 
+pronunciation, and the correct spelling (all caps, squished together,
+with the E depressed below the baseline; the mixed-case 'TeX' is 
+considered an acceptable kluge on ASCII-only devices). ... Knuth 
+began TeX because he had become annoyed at the declining quality of 
+the typesetting in volumes I--III of his monumental *Art of Computer
+Programming*. ... In a manifestation of the typical hackish urge
+to solve the problem at hand once and for all, he began to design 
+his own typesetting language. He thought he would finish it on 
+his sabbatical in 1978; he was wrong by only about 8 years. The language
+was finally frozen around 1985, but volume IV of *The Art of Computer
+Programming* is not expected until 2002. The impact and influence of
+TeX's design has been such that nobody minds very much. Many great
+hackish projects have started as a bit of toolsmithing on the way
+to something else; Knuth's diversion was simply on a grander scale than
+most. TeX has also been a noteworth example of free, shared, but 
+high-quality software. Knuth used to offer monetary awards to people
+who found and reported bugs in it; as the years wore on and the few
+remaining bugs were fixed (and new ones even harder to find(, the bribe
+went up." [New Hackers Dictionary, p. 442]
+
+> "**WYSIWYG** *adj.* Describes a user interface under which 'What You
+See Is What You Get", as opposed to one that uses more-or-less
+obscure commands that do not result in immediate visual feedback."
+[New Hackers Dictionary, p. 494]
+
+## Open-source software
+
+> "This relationship to property gave birth to a radical idea: 'free / 
+libre' software. That revolution happened when MIT officials, in the 
+early 80s, realized that over the years the student hackers had
+written a ton of incredibly valuable software for the MIT computers. 
+So the officials decided to make some money off it. One for-profit
+computer firm called Symbolics asked MIT if it could license all that
+cool software to run on *its* computers. Sure, said MIT. So Symbolics
+duly licensed the code, and the Symbolics employees began tweaking
+and changing and adding new features to it. But whenever Symbolics 
+created a new feature, it kept it proprietary. It wasn't sharing 
+those innovations openly so the next generation of programmers
+could learn from it. That annoyed [Richard] Stallman. He eventually 
+left MIT and invented an entirely different licensing paradigm, 
+called the General Public License. It works like this: Let's say 
+I wrote an email program and issued it under the General Public 
+License, because I'm a public-minded hacker who likes to share
+my work freely. Cool: If you download the email program, the GPL
+means you're also allowed to look at my source code; to modify 
+the email software; and to distribute your remix of my work. But
+there's one extra element here: If you modify the code and start 
+distributing your new version, you have to issue all *your* 
+modifications under the GPL too. You can't keep that new code secret. 
+You're not prevented from making money off your work; you can sell
+the code as a commercial product. (It's 'free' as in 'free speech', 
+not 'free' as in 'free beer', as Stallman pointed out.) But you have
+to publicly release your modified version of the source code, so that
+other people can examine it, remix it, and share it, too---a process
+that carries on, ad infinitum, forever, for anyone who uses my / your
+code. ... It was a gauntlet thrown down in the name of openness, 
+transparency, and control. Its message: You should never trust 
+software if the person making it won't show you the code."
+[Coders, pp. 237--238]
