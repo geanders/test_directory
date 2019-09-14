@@ -27,7 +27,7 @@ and liked its funny, quirky ring. So he wrote a simple snippet of B code
 that displayed that little message. Coders quickly glommed on to Kernighan's
 witty idea, and ever since then, virtually every guide to a programming
 language---and there are over 250---begins with that one incantation. 
-'Hello, World!' neatly distilled the existential jolt of coding: the 
+'Hello, World!' neatly distilled the existential jolt of coding: the
 creation of a life-form that jolts into being." [Coders, p. 14]
 
 > "More than introversion or logic, though, coding selects for people who
@@ -992,6 +992,7 @@ Code, and used fairly simple commands that a newbie could readily
 grasp and wield." [Coders, p. 40]
 
 ## Testing / Bugs 
+
 > "The general approach suggested in this section is to organize the
 tests as S expressions, specifically called *assertions*. We define
 an assertion to be an S expression that is expected to evaluate to
@@ -1010,6 +1011,10 @@ there when it happened). For many years the logbook associated
 with the incident and the actual bug in question (a moth) sat in a 
 display case at the Naval Surface Warfare Center." [New Hackers 
 Dictionary, p. 94]
+
+> "Computer programs break when they reach an 'edge case', where the 
+user tries to do something that the coder never anticipated."
+[Coders, p. 272]
 
 ## R Projects
 
@@ -1080,3 +1085,19 @@ code. ... It was a gauntlet thrown down in the name of openness,
 transparency, and control. Its message: You should never trust 
 software if the person making it won't show you the code."
 [Coders, pp. 237--238]
+
+## Optimization
+
+> "[Jeff Dean] became famous as one of [Google's] genuine 10Xers. 
+Dean was a scale whisperer: He deeply intuited the hardware specs
+of Google's servers, of the internet itself... Coupled with deep
+coding skills, he was able to design systems that ran blisteringly 
+fast and reliably, crucial for such a fast-growing firm. ... Other
+Google coders have come to so revere his that, over the years, 
+they've assembled a long list of 'Jeff Dean Facts', modeled on 
+the satirically worshipful 'Chuck Norris Facts'. (One factoid: 
+'The speed of light in a vacuum used to be about 35 mph. Then 
+Jeff Dean spent a weekend optimizing physics.' And: 'When Jeff Dean
+has an ergonomic evaluation, it is for the protection of his keyboard.'
+Or, if you're nerdier: 'Compilers don't warn Jeff Dean. Jeff Dean 
+warns compilers.'" [Coders, p. 277]
